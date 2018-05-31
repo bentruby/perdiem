@@ -16,37 +16,52 @@ A full day is reimbursed at a rate of 85 dollars per day in a high cost city.
 
 ## Test Cases
 Set 1:
+
 Project 1: Low Cost City Start Date: 9/1/15 End Date: 9/3/15
-### expected value: 165
+#### expected value: 165
 
 Set 2:
+
 Project 1: Low Cost City Start Date: 9/1/15 End Date: 9/1/15
+
 Project 2: High Cost City Start Date: 9/2/15 End Date: 9/6/15
+
 Project 3: Low Cost City Start Date: 9/6/15 End Date: 9/8/15
-### expected value: 590
+#### expected value: 590
 
 Set 3:
+
 Project 1: Low Cost City Start Date: 9/1/15 End Date: 9/3/15
+
 Project 2: High Cost City Start Date: 9/5/15 End Date: 9/7/15
+
 Project 3: High Cost City Start Date: 9/8/15 End Date: 9/8/15
-### expected value: 445
+#### expected value: 445
 
 Set 4:
+
 Project 1: Low Cost City Start Date: 9/1/15 End Date: 9/1/15
+
 Project 2: Low Cost City Start Date: 9/1/15 End Date: 9/1/15
+
 Project 3: High Cost City Start Date: 9/2/15 End Date: 9/2/15
+
 Project 4: High Cost City Start Date: 9/2/15 End Date: 9/3/15
-### expected value: 185
+#### expected value: 185
 
 ## Running Test Cases Manually
-Set 1
+Set 1:
+
 ruby runner.rb '[{"cityCostType":"LOW","startDate":"2015-09-01T00:00:00Z","endDate":"2015-09-03T00:00:00Z"}]'
 
-Set 2
+Set 2:
+
 ruby runner.rb '[{"cityCostType":"LOW","startDate":"2015-09-01T00:00:00Z","endDate":"2015-09-01T00:00:00Z"},{"cityCostType":"HIGH","startDate":"2015-09-02T00:00:00Z","endDate":"2015-09-06T00:00:00Z"},{"cityCostType":"LOW","startDate":"2015-09-06T00:00:00Z","endDate":"2015-09-08T00:00:00Z"}]'
 
-Set 3
+Set 3:
+
 ruby runner.rb '[{"cityCostType":"LOW","startDate":"2015-09-01T00:00:00Z","endDate":"2015-09-03T00:00:00Z"},{"cityCostType":"HIGH","startDate":"2015-09-05T00:00:00Z","endDate":"2015-09-07T00:00:00Z"},{"cityCostType":"HIGH","startDate":"2015-09-08T00:00:00Z","endDate":"2015-09-08T00:00:00Z"}]'
 
-Set 4
+Set 4:
+
 ruby runner.rb '[{"cityCostType":"LOW","startDate":"2015-09-01T00:00:00Z","endDate":"2015-09-01T00:00:00Z"},{"cityCostType":"LOW","startDate":"2015-09-01T00:00:00Z","endDate":"2015-09-01T00:00:00Z"},{"cityCostType":"HIGH","startDate":"2015-09-02T00:00:00Z","endDate":"2015-09-02T00:00:00Z"},{"cityCostType":"HIGH","startDate":"2015-09-02T00:00:00Z","endDate":"2015-09-03T00:00:00Z"}]'
