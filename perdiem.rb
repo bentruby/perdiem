@@ -74,9 +74,6 @@ class Perdiem
 
     days.keys.each do |day|
 
-      puts day
-      puts days.key?(day-1)
-      puts days.key?(day+1)
       if days.key?(day-1) and days.key?(day+1)
         #no gap. full day
         reimburstment += days[day] == 'low' ? Perdiem::LOWFULLRATE : Perdiem::HIGHFULLRATE
