@@ -10,6 +10,7 @@ Any day in the middle of a project, or sequence of projects, is considered a ful
 If there is a gap between projects, then the days on either side of that gap are travel days.
 
 If two projects push up against each other, or overlap, then those days are full days as well.
+
 Any given day is only ever counted once, even if two projects are on the same day.
 
 
